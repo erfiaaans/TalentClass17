@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,27 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
     <link href="assets\css\styles.css" rel="stylesheet" />
 </head>
+
 <body>
     <!-- Start Header Section-->
     <header class="navbar-container">
         <div class="nama-brand">
             <span>
-                <img src="img/logo.png" alt="Flowfy">
+                <img src="assets\img\logo.png">
                 Flowfy
             </span>
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="#keranjang">Keranjang</a></li>
+                <div class="search">
+                    <form action="/search" method="GET">
+                        <input 
+                            type="text" 
+                            name="q" 
+                            placeholder="Search">
+                        <button type="submit">Cari</button>
+                    </form>
+                </div>
                 <li class="dropdown">
                     <a href="#menu">Menu</a>
                     <ul class="dropdown-menu">
@@ -36,20 +46,377 @@
 
     <main>
         <!-- Start Offering Menu -->
-         <section class="container" id="offering-menu">
-
-         </section>
+        <section class="container-menu" id="offering-menu">
+            <div class="offering-menu">
+                <div class="offering-info">
+                    <h1 class="title">Hi, Pelanggan <br>
+                        Meja 45!</h1>
+                    <p>
+                        Kami menghidangkan makanan rumahan <br>
+                        dengan cita rasa yang kaya akan rempah.
+                    </p>
+                </div>
+                <div class="offering-img">
+                    <img src="assets\img\offering.jpg" alt="pizza">
+                </div>
+            </div>
+        </section>
         <!-- End Offering Menu -->
 
         <!-- Start Food Menu -->
-        <section class="container" id="food-menu">
+        <section class="price-container" id="food-menu">
+            <div class="food-content">
+                <div class="title-menu">
+                    <h2>Food Menu</h2>
+                </div>
+                <div class="nav-item">
+                    <div class="list-item">
+                        <h6 class="title-item">Main Course</h6>
+                    </div>
+                    <div class="list-item">
+                        <h6 class="title-item">Snack</h6>
+                    </div>
+                    <div class="list-item">
+                        <h6 class="title-item">Dessert</h6>
+                    </div>
+                </div>
 
+                <!-- Main Course -->
+                <div class="food-box">
+                    <div class="main-course">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\braised-meat.jpg" alt="Braised Meet">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Braised Meat</h5>
+                                <p>
+                                    Sup dengan rebusan daging sapi, kentang dan wortel
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 45.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\minty-meat-rolls.jpg" alt="Minty Meat Rolls">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Minty Meat Rolls</h5>
+                                <p>
+                                    Daun Mint yang digulung dengan daging sapi dengan saus asam manis
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 40.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\Qingce-Stir-Fry.webp" alt="Qingce Stir Fry">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Qingce Stir Fry</h5>
+                                <p>
+                                    Jamur, Lotus Head, cabai dan kubis dengan rasa pedas dan renyah
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 30.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Snack -->
+                    <div class="snack">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\fish-and-chips.jpg" alt="Fish and Chips">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Fish and Chips</h5>
+                                <p>
+                                    Ikan fillet dan kentang goreng dengan saus tartar
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 22.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\crystal-shrimp-dumpling2.jpg" alt="Crystal Shrimp Dumpling">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Crystal Shrimp Dumpling</h5>
+                                <p>
+                                    Pangsit dengan isian terasi udang
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 25.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\samosa.jpg" alt="Samosa">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Samosa</h5>
+                                <p>
+                                    Pastri goreng berisi kentang rebus, kacang kapri, bawang bombay, daun ketumbar,
+                                    panir
+                                    dan daging
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 22.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Dessert -->
+                    <div class="dessert">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\Lighter-than-air Pancake.jpg" alt="Lighter-than-air Pancake">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Lighter-than-air Pancake</h5>
+                                <p>
+                                    Pancake dengan topping whipped cream, stroberi dan coklat
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 35.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\Cloud-Shrouded Jade.webp" alt="Cloud-Shrouded Jade">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Cloud-Shrouded Jade</h5>
+                                <p>
+                                    Puding telur, tangyuan dan pasta lotus
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 27.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\padisarah-pudding.jpeg" alt="Padisarah Pudding">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Padisarah Pudding</h5>
+                                <p>
+                                    Pudding dengan campuran coconut milk dan ubi jalar
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 18.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
         </section>
         <!-- End Food Menu -->
 
         <!-- Start Beverage Menu -->
-        <section class="container" id="beverage-menu">
+        <section class="price-container" id="beverage-menu">
+            <div class="beverage-content">
+                <div class="title-menu">
+                    <h2>Beverage Menu</h2>
+                </div>
+                <div class="nav-item">
+                    <div class="list-item">
+                        <h6 class="title-item">Coffee</h6>
+                    </div>
+                    <div class="list-item">
+                        <h6 class="title-item">Milkshake</h6>
+                    </div>
+                    <div class="list-item">
+                        <h6 class="title-item">Sparkling</h6>
+                    </div>
+                </div>
 
+
+                <div class="beverage-box">
+
+                    <!-- Coffee -->
+                    <div class="coffee">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\beverage\caramel-machiato.webp" alt="Caramel Macchiato">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Caramel Macchiato</h5>
+                                <p>
+                                    Coffee dengan saus karamel dan extra whipped cream
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 22.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\beverage\Tiramisu-Frappuchino.webp" alt="Tiramisu Frappuccino">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Tiramisu Frappuccino</h5>
+                                <p>
+                                    Coffee dengan extra whipped cream dan Cocoa Powder
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 20.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\beverage\Lemonade-Americano.jpg" alt="Lemonade Americano">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Lemonade Americano</h5>
+                                <p>
+                                    Coffee dengan perasan air lemon
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 18.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milkshake -->
+                    <div class="milkshake">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\beverage\Strawberry Oreo Milkshake.jpg"
+                                    alt="Strawberry Oreo Milkshake">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Strawberry Oreo Milkshake</h5>
+                                <p>
+                                    Minuman susu Strawberry dengan campuran cookies and cream
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 22.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\beverage\choco-milkshake.avif" alt="Chocolate Milkshake">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Chocolate Milkshake</h5>
+                                <p>
+                                    Minuman susu coklat dengan topping cherry dan lelehan coklat
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 18.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="assets\img\beverage\banana-milkshake.jpg" alt="Banana Milkshake">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Banana Milkshake</h5>
+                                <p>
+                                    Minuman susu pisang dengan whipped cream dan topping sprinkle
+                                </p>
+                                <div class="d-flex justify-content-between price_box">
+                                    <div class="price_heading">
+                                        <span>Rp</span> 25.000
+                                    </div>
+                                    <div>
+                                        <a href="#">Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- End Beverage Menu -->
 
@@ -57,7 +424,7 @@
         <section class="container" id="contact-menu">
 
         </section>
-         <!-- End Contact -->
+        <!-- End Contact -->
     </main>
 
     <footer class="footer_section">
@@ -67,4 +434,5 @@
             <a href="#"> ~ Erfia Nadia Safari </a>
     </footer>
 </body>
+
 </html>
