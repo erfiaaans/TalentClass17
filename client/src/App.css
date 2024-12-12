@@ -1,3 +1,20 @@
 .bg-custom {
   background-color: #A02334 !important;
 }
+
+.btn-beli{
+  background-color: #FF0000; /* Warna merah */
+  border-color: #FF0000;     /* Border merah */
+  color: white;
+}
+
+.btn-beli:hover {
+  background-color: #D40000; /* Warna merah lebih gelap saat hover */
+  border-color: #D40000;
+}
+
+.text-harga{
+  /* color: #FFAD60; */
+  color: black;
+  font-weight: bold;
+}

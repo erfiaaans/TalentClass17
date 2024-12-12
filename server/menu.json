@@ -1,0 +1,122 @@
+[
+    {
+        "Id": 1,
+        "nama_menu": "Braised Meat",
+        "tipe_menu": "Main Course",
+        "harga": 45000,
+        "deskripsi": "Sup dengan rebusan daging sapi, kentang dan wortel",
+        "url_gambar": "https://i.redd.it/genshin-food-braised-meat-for-yunjin-v0-9ibrtntp75b91.jpg?width=2444&format=pjpg&auto=webp&s=aa712ae18793b5a708cdc518b767985a4dcbf63b"
+    },
+    {
+        "Id": 2,
+        "nama_menu": "Minty Meat Rolls",
+        "tipe_menu": "Main Course",
+        "harga": 40000,
+        "deskripsi": " Daun Mint yang digulung dengan daging sapi dengan saus asam manis",
+        "url_gambar": "https://upload-os-bbs.hoyolab.com/upload/2021/03/26/13193516/cf32f4e07228f17b12d2438e11ad7532_6072609313500965539.jpg"
+    },
+    {
+        "Id": 3,
+        "nama_menu": "Qingce Stir Fry",
+        "tipe_menu": "Main Course",
+        "harga": 30000,
+        "deskripsi": "Jamur, Lotus Head, cabai dan kubis dengan rasa pedas dan renyah",
+        "url_gambar": "https://i0.wp.com/www.angsarap.net/wp-content/uploads/2020/12/Qingce-Stir-Fry.jpg?ssl=1"
+    },
+    {
+        "Id": 4,
+        "nama_menu": "Fish and Chips",
+        "tipe_menu": "Snack",
+        "harga": 22000,
+        "deskripsi": "Ikan fillet dan kentang goreng dengan saus tartar",
+        "url_gambar": "https://www.blibli.com/friends-backend/wp-content/uploads/2024/03/B111477-Cover-scaled.jpg"
+    },
+    {
+        "Id": 5,
+        "nama_menu": "Crystal Shrimp Dumpling",
+        "tipe_menu": "Snack",
+        "harga": 25000,
+        "deskripsi": "Pangsit rebus dengan isian udang",
+        "url_gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1HEQcLpAiwOdfCuxjwf0CpUY9KX4EVSuFhA&s"
+    },
+    {
+        "Id": 6,
+        "nama_menu": "Samosa",
+        "tipe_menu": "Snack",
+        "harga": 22000,
+        "deskripsi": "Pastri goreng berisi kentang rebus, kacang kapri, bawang bombay, daun ketumbar, panir dan daging",
+        "url_gambar": "https://radiostar.harianjogja.com/assets/2024/03/samosa-3.jpg"
+    },
+    {
+        "Id": 7,
+        "nama_menu": "Lighter-than-air Pancake",
+        "tipe_menu": "Dessert",
+        "harga": 35000,
+        "deskripsi": "Pancake dengan topping whipped cream, stroberi dan coklat",
+        "url_gambar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVeO55XU5gDgUGrDzATDLP26GAs92_pWTDQ&s"
+    },
+    {
+        "Id": 8,
+        "nama_menu": "Cloud-Shrouded Jade",
+        "tipe_menu": "Dessert",
+        "harga": 27000,
+        "deskripsi": "Puding telur, tangyuan dan pasta lotus",
+        "url_gambar": "https://preview.redd.it/genshin-food-yun-jins-specialty-cloud-shrouded-jade-v0-aaijf8tn3zb81.jpg?width=1080&crop=smart&auto=webp&s=68f37d227b37863a33fd30c47c31f636c8b45a3b"
+    },
+    {
+        "Id": 9,
+        "nama_menu": "Padisarah Pudding",
+        "tipe_menu": "Dessert",
+        "harga": 18000,
+        "deskripsi": "Pudding dengan campuran coconut milk dan ubi jalar",
+        "url_gambar": "https://i.redd.it/popular-sumeru-sweets-padisarah-pudding-irl-v0-z373evwg6ika1.jpg?width=1400&format=pjpg&auto=webp&s=fe72f933c710ec6a0e0c93a11e1af32eda8cd4e7"
+    },
+    {
+        "Id": 10,
+        "nama_menu": "Caramel Macchiato",
+        "tipe_menu": "Coffee",
+        "harga": 22000,
+        "deskripsi": "Kopi dengan saus karamel dan extra whipped cream",
+        "url_gambar": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01ggeqcga3my9209w6qnct286a.jpg"
+    },
+    {
+        "Id": 11,
+        "nama_menu": "Tiramisu Frappuccino",
+        "tipe_menu": "Coffee",
+        "harga": 20000,
+        "deskripsi": "Kopi dengan extra whipped cream dan Cocoa Powder",
+        "url_gambar": "https://www.marathonsandmotivation.com/wp-content/uploads/2023/07/Tiramisu_Starbucks_Frappuccino.jpg"
+    },
+    {
+        "Id": 12,
+        "nama_menu": "Lemonade Americano",
+        "tipe_menu": "Coffee",
+        "harga": 18000,
+        "deskripsi": "Kopi dengan campuran perasan air lemon",
+        "url_gambar": "https://i.ytimg.com/vi/yqDQ5frH52I/maxresdefault.jpg"
+    },
+    {
+        "Id": 13,
+        "nama_menu": "Strawberry Oreo Milkshake",
+        "tipe_menu": "Milkshake",
+        "harga": 22000,
+        "deskripsi": "Minuman susu Strawberry dengan campuran cookies and cream",
+        "url_gambar": "https://static.thedaringkitchen.com/wp-content/uploads/2022/03/Strawberry-milkshake-12-scaled.jpg"
+    },
+    {
+        "Id": 14,
+        "nama_menu": "Chocolate Milkshake",
+        "tipe_menu": "Milkshake",
+        "harga": 18000,
+        "deskripsi": "Minuman susu coklat dengan topping cherry dan lelehan coklat",
+        "url_gambar": "https://hips.hearstapps.com/hmg-prod/images/delish-220524-chocolate-milkshake-001-ab-web-1654180529.jpg?crop=0.8891228070175439xw:1xh;center,top&resize=1200:*"
+    },
+    {
+        "Id": 15,
+        "nama_menu": "Banana Milkshake",
+        "tipe_menu": "Milkshake",
+        "harga": 25000,
+        "deskripsi": "Minuman susu pisang dengan whipped cream dan topping sprinkle",
+        "url_gambar": "https://www.tastingtable.com/img/gallery/for-a-perfect-banana-milkshake-turn-on-your-oven/l-intro-1673383244.jpg"
+    }
+]
