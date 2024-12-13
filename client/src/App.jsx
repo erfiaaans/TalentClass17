@@ -19,7 +19,7 @@ function App() {
 
   // Mengambil data
   async function getData() {
-    const url = "http://localhost:3000/menu";
+    const url = "https://billowy-poised-pentagon.glitch.me/menu";
     try {
       const response = await fetch(url);
       if (!response.ok) {

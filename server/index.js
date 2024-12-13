@@ -6,17 +6,18 @@ const app = express();
 
 const port = 3000;
 
-app.use(cors())
+app.use(cors());
 
+// Home route
 app.get("/", (request, response) => {
   response.send("Aplikasi Menu Flowfy");
 });
 
+// Menampilkan semua menu
 app.get("/menu", async (request, response) => {
   try {
-    const [dataMenu] = await pool.query(`SELECT * FROM menu`);
-
-    // let dataMenu = data.rows;
+    const result = await pool.query(`SELECT * FROM menu`);
+    const dataMenu = result.rows;  
 
     response.json(dataMenu);
   } catch (error) {
@@ -25,17 +26,19 @@ app.get("/menu", async (request, response) => {
   }
 });
 
+// Menampilkan menu berdasarkan ID
 app.get("/menu/:id", async (request, response) => {
-  //titik 2 agar lebih dinamis
   try {
-    const [dataMenu] = await pool.query(
-      `SELECT * FROM menu WHERE id = ${request.params.id}`
+    const { id } = request.params;  
+    const result = await pool.query(
+      `SELECT * FROM menu WHERE id = $1`, [id] 
     );
 
-    if (!dataMenu.length) {
-      response.status(404).json({ message: "Data Not Found" });
+    const dataMenu = result.rows; 
+    if (dataMenu.length === 0) {
+      return response.status(404).json({ message: "Data Not Found" });
     } else {
-      response.json(dataMenu);
+      response.json(dataMenu[0]);
     }
   } catch (error) {
     console.log(error);
