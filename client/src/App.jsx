@@ -64,8 +64,8 @@ function App() {
     toast.success(message, {
       autoClose: 3000,
       hideProgressBar: true,
-      closeOnClick: true, 
-      pauseOnHover: true, 
+      closeOnClick: true,
+      pauseOnHover: true,
     });
   };
 
@@ -112,7 +112,7 @@ function App() {
             <form
               className="d-flex"
               role="search"
-              onSubmit={(e) => e.preventDefault()} 
+              onSubmit={(e) => e.preventDefault()}
             >
               <input
                 className="form-control me-2"
@@ -144,9 +144,8 @@ function App() {
           {uniqueTipeMenu.map((tipe, index) => (
             <li className="nav-item" role="presentation" key={index}>
               <button
-                className={`nav-link rounded-5 ${
-                  activeTab === tipe ? "active" : ""
-                }`}
+                className={`nav-link rounded-5 ${activeTab === tipe ? "active" : ""
+                  }`}
                 id={`${tipe}-tab`}
                 data-bs-toggle="tab"
                 type="button"
@@ -220,6 +219,14 @@ function App() {
         draggable
         pauseOnHover
       />
+
+      {/* Footer */}
+      <footer className="bg-body-tertiary text-center text-lg-start text-light">
+        <div className="text-center p-3 bg-custom">
+          © 2024 Erfia Nadia Safari
+        </div>
+      </footer>
+      {/* Footer */}
     </>
   );
 }

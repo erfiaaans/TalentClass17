@@ -3,13 +3,13 @@
 }
 
 .btn-beli{
-  background-color: #FF0000; /* Warna merah */
-  border-color: #FF0000;     /* Border merah */
+  background-color: #FF0000; 
+  border-color: #FF0000;     
   color: white;
 }
 
 .btn-beli:hover {
-  background-color: #D40000; /* Warna merah lebih gelap saat hover */
+  background-color: #D40000; 
   border-color: #D40000;
 }
 
@@ -25,4 +25,8 @@
 
 .bg-nav-pills .active {
   color:#273c75
+}
+
+.bg-footer{
+  background-color: #FF0000;
 }
