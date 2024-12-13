@@ -18,3 +18,11 @@
   color: black;
   font-weight: bold;
 }
+
+.bg-nav-pills {
+  background-color: #273c75;
+}
+
+.bg-nav-pills .active {
+  color:#273c75
+}

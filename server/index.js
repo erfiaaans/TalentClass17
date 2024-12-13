@@ -6,11 +6,10 @@ const app = express();
 
 const port = 3000;
 
-//Cors permission
 app.use(cors())
 
 app.get("/", (request, response) => {
-  response.send("Data masih belom diinput ke database wkwk");
+  response.send("Aplikasi Menu Flowfy");
 });
 
 app.get("/menu", async (request, response) => {

@@ -1,16 +1,15 @@
 const pool = require("./connection");
 
 let createTableMenu = `
-    id INT AUTO_INCREMENT PRIMARY KEY, 
-    nama_menu VARCHAR(50),
-    tipe_menu VARCHAR(50),
-    harga double,
-    deskripsi TEXT, 
-    url_gambar TEXT,   
-);
+    CREATE TABLE IF NOT EXISTS menu (
+        id SERIAL PRIMARY KEY, 
+        nama_menu VARCHAR(50),
+        tipe_menu VARCHAR(50),
+        harga DOUBLE PRECISION,
+        deskripsi TEXT, 
+        url_gambar TEXT
+    )
 `;
-
-// koneksi ke database => asynchronous
 
 async function runSetup() {
   try {
