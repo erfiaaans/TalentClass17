@@ -10,3 +10,5 @@ __TOOLS:__
 3. Back-End: express
 4. Bootstrap5
 5. Toast
+
+Nb:Maaf kak yg akun satunya yg commit pake akun kampusku, masih bingung buat switch akunnya :((((
