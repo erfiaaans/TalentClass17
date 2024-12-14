@@ -6,6 +6,7 @@ import CardItem from "./components/CardItem";
 import CartItem from "./components/CartItem";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import header from "./assets/img/header3.png";
 
 function App() {
   const [dataMenu, setDataMenu] = useState([]);
@@ -49,7 +50,7 @@ function App() {
     return matchesSearch && matchesTab;
   });
 
-  // Handle cart (Tambahkan ke dalam keranjang)
+  // Handle cart 
   const [cart, setCart] = useState([]);
 
   function addToCart(menu) {
@@ -72,7 +73,7 @@ function App() {
   return (
     <>
       {/* Start Navbar */}
-      <nav className="navbar bg-custom">
+      <nav className="navbar bg-custom sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <span className="d-flex align-items-center">
@@ -128,9 +129,17 @@ function App() {
       </nav>
       {/* End Navbar */}
 
+      {/* Header */}
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">Hi, Pelanggan No. Meja 17!</h5>
+        </div>
+        <img src={header} className="card-img-bottom" alt="new-menu" />
+      </div>
+      {/* Header */}
+
       {/* Start Menu */}
       <div className="container py-5">
-        {/* Tab Navigation */}
         <ul
           className="nav nav-pills nav-fill gap-2 p-1 small bg-nav-pills rounded-5 shadow-sm mb-4"
           id="pillNav2"
@@ -176,7 +185,7 @@ function App() {
       </div>
       {/* End Menu */}
 
-      {/* Start Drawer */}
+      {/* Start Cart */}
       <div
         className="offcanvas offcanvas-end"
         tabIndex="-1"
@@ -206,8 +215,16 @@ function App() {
             );
           })}
         </div>
+        <div className="modal-footer p-3 m-2">
+          <button 
+            type="button"
+            className="btn bg-custom text-white"
+          >
+          Pembayaran
+          </button>
+        </div>
       </div>
-      {/* End Drawer */}
+      {/* End Cart */}
       <ToastContainer
         position="top-right"
         autoClose={3000}

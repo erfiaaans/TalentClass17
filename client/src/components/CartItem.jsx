@@ -7,12 +7,15 @@ function CartItem({ cart }) {
     return (
         <div className="card mb-3">
             <div className="row g-0">
-                <div className="col-md-4">
-                    <img
-                        src={cart.url_gambar}
-                        className="img-fluid rounded-start"
-                        alt="menu-poster"
-                    />
+                <div className="col-md-4 d-flex align-items-center p-3">
+                    <div className='ratio ratio-4x3 w-100'>
+                        <img
+                            src={cart.url_gambar}
+                            className="img-fluid rounded-start"
+                            alt="menu-poster"
+                            style={{ objectFit: 'cover' }}
+                        />
+                    </div>
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
@@ -36,7 +39,7 @@ CartItem.propTypes = {
         nama_menu: PropTypes.string.isRequired,
         deskripsi: PropTypes.string,
         harga: PropTypes.number.isRequired,
-        created_at: PropTypes.string, 
+        created_at: PropTypes.string,
         id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     }).isRequired,
 };
