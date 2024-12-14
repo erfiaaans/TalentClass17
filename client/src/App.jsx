@@ -216,11 +216,11 @@ function App() {
           })}
         </div>
         <div className="modal-footer p-3 m-2">
-          <button 
+          <button
             type="button"
             className="btn bg-custom text-white"
           >
-          Pembayaran
+            Pembayaran
           </button>
         </div>
       </div>
@@ -240,7 +240,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-body-tertiary text-center text-lg-start text-light">
         <div className="text-center p-3 bg-custom">
-          © 2024 Erfia Nadia Safari
+          © 2024 Copyright: Flowfy. Made by Erfia Nadia Safari
         </div>
       </footer>
       {/* Footer */}
