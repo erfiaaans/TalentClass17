@@ -11,4 +11,7 @@ __TOOLS:__
 4. Bootstrap5
 5. Toast
 
+Client: npm i => npm run dev
+Server: npm i => node --watch index.js
+
 Nb:Maaf kak yg akun satunya yg commit pake akun kampusku, masih bingung buat switch akunnya :((((
